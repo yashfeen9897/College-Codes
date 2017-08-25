@@ -1,4 +1,4 @@
-/*P4.1 Program of stack using array*/
+/*Program of stack using array*/
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -47,9 +47,9 @@ main()
 			exit(1);
 		 default:
 			printf("Wrong choice\n");
-		}/*End of switch*/
-	}/*End of while*/
-}/*End of main()*/
+		}
+	}
+}
 
 void push(int item)
 {
@@ -60,7 +60,7 @@ void push(int item)
 	}
 	top = top+1;
 	stack_arr[top] = item;
-}/*End of push()*/
+}
 
 int pop()
 {
@@ -73,7 +73,7 @@ int pop()
 	item = stack_arr[top];
 	top = top-1;
 	return item;
-}/*End of pop()*/
+}
 
 int peek()
 {
@@ -83,7 +83,7 @@ int peek()
 		exit(1);
 	}
 	return stack_arr[top];
-}/*End of peek()*/
+}
 
 int isEmpty()
 {
@@ -91,7 +91,7 @@ int isEmpty()
 		return 1;
 	else
 		return 0;
-}/*End of isEmpty*/
+}
 
 int isFull()
 {
@@ -99,7 +99,7 @@ int isFull()
 		return 1;
 	else
 		return 0;
-}/*End of isFull*/
+}
 
 void display()
 {
@@ -113,7 +113,7 @@ void display()
 	for(i=top;i>=0;i--)
 		printf(" %d\n", stack_arr[i] );
 	printf("\n");
-}/*End of display()*/
+}
 
 
 
